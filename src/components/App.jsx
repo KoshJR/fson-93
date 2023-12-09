@@ -1,5 +1,4 @@
 import { FriendList } from './FriendList/FriendList';
-import { Profile } from './Profile/Profile';
 
 const friendsData = [
   {
