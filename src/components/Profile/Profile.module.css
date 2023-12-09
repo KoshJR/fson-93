@@ -1,0 +1,10 @@
+.friendProfile {
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 25px;
+}
+
+.friendProfile .accent {
+  font-weight: 800;
+  color: blueviolet;
+}
