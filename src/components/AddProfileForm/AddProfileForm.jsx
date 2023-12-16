@@ -22,7 +22,6 @@ export class AddProfileForm extends Component {
   render() {
     return (
       <form className={css.form} onSubmit={this.handleFormSubmit}>
-        <h2></h2>
         <label className={css.formLabel}>
           <span className={css.formLabelText}>Name:</span>
           <input
