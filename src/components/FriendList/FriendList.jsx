@@ -1,7 +1,12 @@
 import { Profile } from 'components/Profile/Profile';
 import React from 'react';
 
-export const FriendList = ({ friends, title = '' }) => {
+export const FriendList = ({
+  friends,
+  title = '',
+  handlePrintProfileName,
+  handleDeleteProfile,
+}) => {
   return (
     <div>
       {title.length > 0 && <h2>{title}</h2>}
@@ -10,9 +15,12 @@ export const FriendList = ({ friends, title = '' }) => {
           return (
             <Profile
               key={friend.id}
+              id={friend.id}
               name={friend.name}
               age={friend.age}
               isFavorite={friend.isFavorite}
+              handlePrintProfileName={handlePrintProfileName}
+              handleDeleteProfile={handleDeleteProfile}
             />
           );
         })}
