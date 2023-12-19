@@ -14,14 +14,13 @@ export class Modal extends Component {
 
   componentDidMount() {
     window.addEventListener('keydown', this.handleKeyPress);
+
+    document.body.style.overflow = 'hidden';
   }
 
   componentWillUnmount() {
     document.body.style.overflow = 'auto';
     window.removeEventListener('keydown', this.handleKeyPress);
-  }
-  componentDidMount() {
-    document.body.style.overflow = 'hidden';
   }
   render() {
     return (
