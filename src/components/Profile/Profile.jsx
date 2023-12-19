@@ -7,6 +7,7 @@ const Profile = ({
   className = '',
   handlePrintProfileName,
   handleDeleteProfile,
+  handleOpenProfileWindow,
   id,
 }) => {
   return (
@@ -20,6 +21,9 @@ const Profile = ({
         {isFavorite && 'best'} Hello, <span className={css.accent}>{name}</span>
         . Your age is: {age}
         <button onClick={() => handlePrintProfileName(name)}>Print Name</button>
+        <button onClick={() => handleOpenProfileWindow(id)}>
+          Show Details
+        </button>
         <button onClick={() => handleDeleteProfile(id)}>&times;</button>
       </p>
     </div>

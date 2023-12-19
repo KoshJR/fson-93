@@ -6,6 +6,7 @@ export const FriendList = ({
   title = '',
   handlePrintProfileName,
   handleDeleteProfile,
+  handleOpenProfileWindow,
 }) => {
   return (
     <div>
@@ -21,6 +22,7 @@ export const FriendList = ({
               isFavorite={friend.isFavorite}
               handlePrintProfileName={handlePrintProfileName}
               handleDeleteProfile={handleDeleteProfile}
+              handleOpenProfileWindow={handleOpenProfileWindow}
             />
           );
         })}
