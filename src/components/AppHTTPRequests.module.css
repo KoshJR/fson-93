@@ -1,0 +1,26 @@
+.postList {
+  max-width: 1440px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 200px));
+  gap: 20px;
+  padding: 0 15px;
+}
+.postListItem {
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.itemTitle {
+  font-weight: 600;
+  margin-bottom: 8px;
+  font-size: 24px;
+}
+.itemId {
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+.itemBody {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
