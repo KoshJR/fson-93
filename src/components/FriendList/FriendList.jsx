@@ -1,5 +1,6 @@
 import { Profile } from 'components/Profile/Profile';
 import React from 'react';
+import { useSelector } from 'react-redux';
 
 export const FriendList = ({
   friends,
@@ -8,6 +9,7 @@ export const FriendList = ({
   handleDeleteProfile,
   handleOpenProfileWindow,
 }) => {
+  
   return (
     <div>
       {title.length > 0 && <h2>{title}</h2>}
